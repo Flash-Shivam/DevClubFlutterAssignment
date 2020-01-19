@@ -16,7 +16,7 @@ systemd─┬─ModemManager───2*[{ModemManager}]
         │         ├─Web Content───36*[{Web Content}]
         │         ├─Web Content───34*[{Web Content}]
         │         ├─WebExtensions───30*[{WebExtensions}]
-        │         └─77*[{firefox}]
+        │         └─78*[{firefox}]
         ├─fwupd───4*[{fwupd}]
         ├─gdm3─┬─gdm-session-wor─┬─gdm-wayland-ses─┬─gnome-session-b─┬─gnome-sh+
         │      │                 │                 │                 ├─gsd-a11y+
@@ -105,6 +105,8 @@ systemd─┬─ModemManager───2*[{ModemManager}]
         │         ├─evolution-sourc───3*[{evolution-sourc}]
         │         ├─gnome-shell-cal───5*[{gnome-shell-cal}]
         │         ├─gnome-terminal-─┬─bash───pstree
+        │         │                 ├─bash─┬─cat
+        │         │                 │      └─tee
         │         │                 └─3*[{gnome-terminal-}]
         │         ├─goa-daemon───3*[{goa-daemon}]
         │         ├─goa-identity-se───3*[{goa-identity-se}]
